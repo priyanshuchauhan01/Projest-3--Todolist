@@ -1,24 +1,85 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2c3333;
+  font-family: DM Sans, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 94px;
+}
+
+.container h1 {
+  color: #a5c9ca;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+input {
+  width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  border: none; /* Remove border completely */
   color: white;
+  outline: none;
+  margin-top: 10px;
 }
 
-.App-intro {
-  font-size: large;
+input:focus {
+  font-size: 24px; /* Set the font size when input is in focus */
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+input::placeholder {
+  font-size: 20px;
+}
+
+.container .btn {
+  margin-left: 20px;
+  padding: 10px 35px;
+  border-radius: 2vw;
+  background-color: #a5c9ca;
+  border: none;
+}
+
+.container .btn:hover {
+  background-color: aliceblue;
+}
+
+.list-items {
+  justify-content: center;
+  color: #fff;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  margin: 20px;
+  background-color: #0d0e0e;
+  border-radius: 10px;
+}
+
+.container button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  /* Add your responsive styles for screens with a maximum width of 600 pixels */
 }
